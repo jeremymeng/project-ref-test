@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0-*",
+
+  "compile": [ "../../UnitTests/Library/ClassLibrary1/*.cs" ],
+  "compilationOptions": {
+    "keyFile": "../../UnitTests/Library/ClassLibrary1/Foo.snk"
+  },
+
+  "dependencies": {
+  },
+  "frameworks": {
+    "netstandard1.3": {
+      "compilationOptions": {
+        "define": [ "NETCORE" ]
+      },
+      "dependencies": {
+        "System.Linq.Queryable": "4.0.1-rc2-24103"
+      }
+    }
+  }
+}
