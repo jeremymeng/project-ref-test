@@ -1,16 +1,18 @@
 {
   "version": "1.0.0-*",
 
-  "compile": [ "../../UnitTests/Library/ClassLibrary1/*.cs" ],
-  "compilationOptions": {
-    "keyFile": "../../UnitTests/Library/ClassLibrary1/Foo.snk"
+  "buildOptions": {
+    "keyFile": "../../UnitTests/Library/ClassLibrary1/Foo.snk",
+    "compile": {
+      "include": [ "../../UnitTests/Library/ClassLibrary1/*.cs" ],
+    }
   },
 
   "dependencies": {
   },
   "frameworks": {
     "netstandard1.3": {
-      "compilationOptions": {
+      "buildOptions": {
         "define": [ "NETCORE" ]
       },
       "dependencies": {
